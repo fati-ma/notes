@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+
   "directories": {
     "lib": "lib"
   },
@@ -24,5 +25,12 @@
   "bugs": {
     "url": "https://github.com/fati-ma/notes/issues"
   },
+
   "homepage": "https://github.com/fati-ma/notes#readme"
+
+  "homepage": "https://github.com/fati-ma/notes#readme",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
+
 }
