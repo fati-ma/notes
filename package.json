@@ -28,9 +28,4 @@
 
   "homepage": "https://github.com/fati-ma/notes#readme"
 
-  "homepage": "https://github.com/fati-ma/notes#readme",
-  "dependencies": {
-    "minimist": "^1.2.5"
-  }
-
 }
