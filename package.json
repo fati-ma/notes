@@ -3,8 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "jest": "^26.6.3",
+    "minimist": "^1.2.5"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage --verbose"
   },
   "repository": {
     "type": "git",
@@ -16,8 +25,7 @@
   "bugs": {
     "url": "https://github.com/fati-ma/notes/issues"
   },
-  "homepage": "https://github.com/fati-ma/notes#readme",
-  "dependencies": {
-    "minimist": "^1.2.5"
-  }
+
+  "homepage": "https://github.com/fati-ma/notes#readme"
+
 }

@@ -3,44 +3,40 @@
 ## Author: Fatima Atieh
 
 
-# -----------------------------------------------------
-
 ### Overview
 
 A terminal based (CLI) application allowing users to easily create and manage a list of categorized notes
 
+Use the following to run the cli app:
 
-### Setup
+`node index.js --add 'note'`
 
-```
-npm i minimist
-```
+`node index.js -a 'note'`
 
 
-### Modules
 
-`input.js`
+## Modules
+
+`inputs.js`
+
 `notes.js`
 
 
-### Running the app
-
-**To try this app in the terminal**
-
-
-- > node index.js --add 'This is a really cool thing that I wanted to remember for later'
-
-
-- > node index.js -a 'This is a really cool thing that I wanted to remember for later'
-
-**This will appear in the console**
+## Setup
 
 ```
-    Action and input you used:  input { action: 'add', payload: 'This is a really cool thing that I wanted to remember for later' }
-    Text you have entered:  { id: 11, note: 'This is a really cool thing that I wante
+npm i minimist
+npm  i jest
 ```
 
 
-### UML Class Diagram 
+## Tests 
+
+```
+npm test
+```
+
+
+## UML - Class Diagram
 
 ![class-diagram](img/class.png)
