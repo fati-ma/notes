@@ -12,14 +12,14 @@ describe('Notes Module', () => {
         payload: 'OKK'
     }
 
-    it('Invalid action', () => {
-        let options = new Notes({ actions: 'error: Invalid action' });
-        expect(console.log).toHaveBeenCalled();
+    it('when invalid action happens, should not console anything', () => {
+        let options = new Notes({ actions: '-b'});
+        expect(console.log).not.toHaveBeenCalled();
     });
 
-    it('Invalid payload', () => {
-        let options = new Notes({ actions: 'invalid notes' });
-        expect(console.log).toHaveBeenCalled();
+    it('when invalid paylod(note) is added, should not console anything', () => {
+        let options = new Notes({ actions: '' , payload: ''});
+        expect(console.log).not.toHaveBeenCalled();
     });
 
     it('correct action and payload', () => {

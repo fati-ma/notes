@@ -7,6 +7,13 @@
 
 A terminal based (CLI) application allowing users to easily create and manage a list of categorized notes
 
+Use the following to run the cli app:
+
+`node index.js --add 'note'`
+
+`node index.js -a 'note'`
+
+
 
 ## Modules
 

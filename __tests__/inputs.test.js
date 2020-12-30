@@ -7,7 +7,6 @@ const minimist = require('minimist');
 minimist.mockImplementation(() => {
     return {
         a: { _: [], a: 'OKK' },
-        args: { _: [], c: 'OKK2' }
 
     }
 });
@@ -16,15 +15,14 @@ minimist.mockImplementation(() => {
 
 describe('Input Module', () => {
 
-    it('valid()  invalid action', () => {
+    it('valid() valid action', () => {
         const testInput = new Input();
-        let args = { _: [], c: 'OKK2' }
-        expect(testInput.valid(args)).toBeFalsy();
+        expect(testInput.valid({ _: [], add: 'OKK' })).toBeTruthy();
     });
-    it('valid() returns action and massage as payload', () => {
+    it('valid() only accepts -a and --add', () => {
         const testInput = new Input();
-        let args = { _: [], a: 'OKK' }
-        expect(testInput.valid(args)).toBeTruthy();
+        let args = { _: [], b: 'NOT OKK' }
+        expect(testInput.valid(args)).toBeFalsy();
     });
 
 });
